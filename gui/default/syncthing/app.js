@@ -32,7 +32,7 @@ syncthing.config(function ($httpProvider, $translateProvider, LocaleServiceProvi
     });
 
     LocaleServiceProvider.setAvailableLocales(validLangs);
-    LocaleServiceProvider.setDefaultLocale('en');
+    LocaleServiceProvider.setDefaultLocale('zh-CN');
 });
 
 // @TODO: extract global level functions into separate service(s)

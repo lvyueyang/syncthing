@@ -7,7 +7,7 @@
 // You can obtain one at https://mozilla.org/MPL/2.0/.
 
 -->
-<html lang="en" ng-app="syncthing" ng-controller="SyncthingController">
+<html lang="zh-CN" ng-app="syncthing" ng-controller="SyncthingController">
 <head>
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -85,13 +85,13 @@
               <span class="hidden-xs" translate translate-value-version="{{upgradeInfo.latest}}">Upgrade To {%version%}</span>
             </button>
           </li>
-          <li class="dropdown" language-select></li>
-          <li>
+          <!-- <li class="dropdown" language-select></li> -->
+          <!-- <li>
             <a class="navbar-link" href="{{docsURL('intro/gui')}}" target="_blank">
               <span class="fas fa-question-circle"></span>
               <span class="hidden-xs" translate>Help</span>
             </a>
-          </li>
+          </li> -->
           <li class="dropdown action-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
               <span class="fas fa-cog"></span>
@@ -110,8 +110,8 @@
                   <span class="fas fa-fw fa-question-circle"></span>&nbsp;<span translate>Help</span>
                 </a>
               </li>
-              <li><a href="" ng-click="about.show()"><span class="far fa-fw fa-heart"></span>&nbsp;<span translate>About</span></a></li>
-              <li class="divider" aria-hidden="true"></li>
+              <!-- <li><a href="" ng-click="about.show()"><span class="far fa-fw fa-heart"></span>&nbsp;<span translate>About</span></a></li> -->
+              <!-- <li class="divider" aria-hidden="true"></li> -->
               <li><a href="" ng-click="advanced()"><span class="fas fa-fw fa-cogs"></span>&nbsp;<span translate>Advanced</span></a></li>
               <li><a href="" ng-click="logging.show()"><span class="far fa-fw fa-file-alt"></span>&nbsp;<span translate>Logs</span></a></li>
               <li class="divider" aria-hidden="true" ng-if="config.gui.debugging"></li>
@@ -940,7 +940,7 @@
 
   <!-- Bottom bar -->
 
-  <nav class="navbar navbar-default navbar-fixed-bottom">
+  <!-- <nav class="navbar navbar-default navbar-fixed-bottom">
     <div class="container">
       <ul class="nav navbar-nav">
         <li><a class="navbar-link" href="https://syncthing.net/" target="_blank"><span class="fas fa-home"></span>&nbsp;<span translate>Home page</span></a></li>
@@ -953,7 +953,7 @@
         <li><a class="navbar-link" href="https://twitter.com/syncthing" target="_blank"><span class="fab fa-twitter"></span>&nbsp;<span translate>Twitter</span></a></li>
       </ul>
     </div>
-  </nav>
+  </nav> -->
 
   <ng-include src="'syncthing/core/networkErrorDialogView.html'"></ng-include>
   <ng-include src="'syncthing/core/httpErrorDialogView.html'"></ng-include>
